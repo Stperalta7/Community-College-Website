@@ -1,0 +1,161 @@
+/* General setup; do not change the given CSS code. Add your own CSS code at the bottom! 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gayathri:wght@100;400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+header {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.15rem;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-color: crimson;
+  background-color: beige;
+}
+
+footer {
+  border-color: #a66;
+  background-color: beige;
+}
+
+:focus {
+  outline: none;
+}
+
+p {
+  .unna-regular {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  text-indent: 30px;
+}
+
+h1 {
+  .unna-bold {
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+h2 {
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+  background-size: 100%;
+  background-image: url("external-link-52.png");
+}
+
+aside {
+  border: 3px solid blue;
+  box-shadow: 5px 5px 5px #888;
+  font-size: 1.2rem;
+  background-color: beige;
+}
+
+aside li {
+  list-style-type: square;
+}
+
+nav li {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #a66;
+  border-radius: 30%;
+  .gayathri-bold {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.4rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li:hover {
+  background-color: lightgoldenrodyellow;
+  text-indent: 20%;
+  text-decoration: none;
+}
+
+nav li:focus {
+  background-color: lightgoldenrodyellow;
+}
+
+nav li:visited {
+  color: #a66;
+}
+
+section li {
+  list-style: square;
+}
